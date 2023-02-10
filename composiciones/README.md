@@ -1,4 +1,7 @@
-# in-tropo-deli (minitidal)
+# Composiciones
+
+
+## in-tropo-deli (minitidal)
 
 	stack[
 	s "tabla ~!5 tabla2 ~!2" # n (irand 3)
@@ -8,7 +11,7 @@
 	]
 	-- # silence
 
-# nop-terrestre-bli-bla (minitidal)
+## nop-terrestre-bli-bla (minitidal)
 
 	stack[
 	n "1 ~ [0 8 _ ]*4 ~ ~ 0 1 ~ ~ " # s "808"
@@ -18,7 +21,7 @@
 	, s "sine*12 _ _ _ _ _ sine _ _ _" # speed (irand 20)
 	]
 
-# no-tan-mii-long-aaah (minitidal)
+## no-tan-mii-long-aaah (minitidal)
 
 	stack[
 	s "db ~!6 hh ~!4" # n (irand 3)
@@ -29,7 +32,7 @@
 	]
 	-- # silence
 
-# alga-loop-e (minitidasl)
+## alga-loop-e (minitidasl)
 
 	stack [
 	s "<bass!2 bass> ~*2 <bass bass*2 bass*3> ~" # n (irand 4) # gain 0.7 # pan (-0.4 + rand)
@@ -39,7 +42,7 @@
 	]
 	-- # silence
 
-# alga-loop-e-silb-and-o (minitidal)
+## alga-loop-e-silb-and-o (minitidal)
 
 	stack [
 	s "<bass!2 bass> ~*2 <bass bass*2 bass*3> ~" # n (irand 7) # gain 0.6 # pan (-0.4 + rand)
@@ -49,7 +52,7 @@
 	]
 	-- # silence
 
-# en-corde-re-cuerdo (minitidal)
+## en-corde-re-cuerdo (minitidal)
 
 	s "[gtr*3 | ~] [gtr*2 | gtr] [gtr | ~] [gtr*5 | ~]"
     # note  (
@@ -65,7 +68,7 @@
     # pan sine
     -- # silence
 
-# con-trarit-mic-a (minitidal)
+## con-trarit-mic-a (minitidal)
 
 	stack [
 	juxBy 0.2 rev $ every 2 ("<0.25 0.125 0.5>" <~) $ n "0*2 [[~ 1] 3] 4 [0 3*2]" # s "[909 | 808 | feel]"
@@ -73,7 +76,7 @@
 	, juxBy 0.5 rev $ chunk 4 ((+ speed (1 + sine)) . ply 8) $ n "3(3,8)" # s "future"  # speed "<-1 1>"  # legato "<1 2 3>"
 	]
     -- # silence
-# peg-alent-o-ng-astra (minitidal)
+## peg-alent-o-ng-astra (minitidal)
 
 	stack [
 	s "909(3,8)" # n (shuffle 3 "0 1 5 7 8")
@@ -84,7 +87,7 @@
 	]
 	-- # silence
 
-# peg-alent-o-ng-marea (minitidal)
+## peg-alent-o-ng-marea (minitidal)
 
 	stack [
 	s "e(3,8)" # n (shuffle 3 "0 1 2 3 4 5 6 7 8 9") # gain 0.8
@@ -94,7 +97,7 @@
 	, slow "[ 2 | 3 | 1 | 0.5 ]" $ s "gtr" # note "[ f'min | c'maj'o | c'maj | e'min'o | a'min | b4'maj | g'maj ]" # gain 0.9 # pan sine
 	]
 	-- # silence
-# tum-tan-tam-ten-tom
+## tum-tan-tam-ten-tom
 
 	stack [
 	s "sn(<2 3>,7)"
@@ -107,7 +110,7 @@
 	]
 	-- # silence
 
-# tro-pi-e-zotini-e-bla (minitidal)
+## tro-pi-e-zotini-e-bla (minitidal)
 
 	stack[
 	s "bd(3,4)"
@@ -118,7 +121,7 @@
 	]
 	-- # silence
 
-# tecni-cabip-ment-e-blup (minitidal)
+## tecni-cabip-ment-e-blup (minitidal)
 
 	stack [
 	n "1 ~ 2 ~!2 3 ~!2" # s "[arpy | newnotes]" # speed ((irand 3)+ (sine * 2))
@@ -135,7 +138,7 @@
 	-- # silence
 
 
-# re-petid-asi-multan-ea (minitidal)
+## re-petid-asi-multan-ea (minitidal)
 
 	slow "[0.9 | 1 | 1.1]"
 	$ n "[ <0 1> [2 | 4 | 6] <0 1> [3 | 5 | 7] ]!4"
@@ -143,7 +146,7 @@
     # gain 0.8
 	-- # silence
 
-# re-petid-asi-multan-eae-x-tracort-ada (minitidal)
+## re-petid-asi-multan-eae-x-tracort-ada (minitidal)
 
     slow "[0.9 | 1 | 1.1]"
     $ n "[ <0 1> [2 | 4 | 6] <0 1> [3 | 5 | 7] ]!4"
@@ -151,7 +154,7 @@
     # gain 0.8
     -- # silence
 
-# pip-upi-pipi-pup-a (minitidal)
+## pip-upi-pipi-pup-a (minitidal)
 
     stack [
     n "0 ~ 3 ~ 6 ~ ~ " # s "[[808 | e] , tink]"
