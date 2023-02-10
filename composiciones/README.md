@@ -216,4 +216,5 @@
 	, slow 3 $ note "[c e g b](5,7)" # s "sax" |+ note (5 + "<4 7 2>") # hcutoff 1000 # resonance "0.9"
 	]
 	# bandf (100 + (sine * 2000)) # gain 1.7
+
 	-- # silence
