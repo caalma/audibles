@@ -24,6 +24,7 @@
 	, s "[~ bd*3 [hh _ ]!2 ~!8]" # n (wchoose [(0, 0.50), (1, 0.2), (2, 0.3)])
 	, s "sine*12 _ _ _ _ _ sine _ _ _" # speed (irand 20)
 	]
+	-- # silence
 
 ## no-tan-mii-long-aaah
 
