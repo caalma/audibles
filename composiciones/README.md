@@ -192,3 +192,28 @@
     , slow "<3 2>" $ n "0 ~ 2*2 ~ ~" # s "[ future | tok | bass3 ]"
     ] # pan sine
     -- # silence
+
+
+## conv-e-rgen-ci-ante
+
+	##minitidal
+
+	degradeBy 0.1 $ stack [
+	n "<[0 1 0 2] [7 2 5 1] [8 4 2 0 1 3]>" # s "tok" # gain 1.3
+	, n "<1 [3 | 5]>([4 | 5], 6)" # s "bass3"
+	, degradeBy 0.25 $ n "<1 2 3 4>_ <3 4> <5 6 7>__ <2 3>___ <7 8 9 10> <0 1>_" |+ note (irand 6) # s "<e newnotes future>"
+	, every 3 rev $ s (overlay "newnotes(2,6)" "arpy(4,6)") # n "<2 1> 0 <3 5> <7 1 0>" # speed "0.1 <0.3 -0.4> -1 1"
+	]
+	-- # silence
+
+## ent-a-rrad-oys-u-mergid-o
+
+	##minitidal
+
+	stack [
+	degradeBy 0.7 $ n "[0 | 9]*17" # s "tok" # gain 1.3
+	, degradeBy 0.5 $  n "<0 2 3 5>*9" # s "[bass3 | jvbass]" # speed (0.4 + sine )
+	, slow 3 $ note "[c e g b](5,7)" # s "sax" |+ note (5 + "<4 7 2>") # hcutoff 1000 # resonance "0.9"
+	]
+	# bandf (100 + (sine * 2000)) # gain 1.7
+	-- # silence
