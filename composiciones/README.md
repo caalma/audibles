@@ -38,7 +38,9 @@
 	]
 	-- # silence
 
-## alga-loop-e (minitidasl)
+## alga-loop-e
+
+	##minitidal
 
 	stack [
 	s "<bass!2 bass> ~*2 <bass bass*2 bass*3> ~" # n (irand 4) # gain 0.7 # pan (-0.4 + rand)
