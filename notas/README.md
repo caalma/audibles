@@ -26,11 +26,11 @@ Muestra la configuración de la vista actual:
 
 	!dumpview
 
+Muestra el nombre de la vista actual:
+
+	!activeview
+
 Graba la vista actual con el nombre indicado:
-
-	!publishview elegida
-
-Activar la vista actual como default en el ensamble:
 
 	!publishview elegida
 
