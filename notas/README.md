@@ -41,7 +41,7 @@ Carga la vista indicada:
 
 ### Control de reloj interno y tempo
 
-Cambia la velocidad de los ciclos por segundo. Por ejemplo: 120 / 60 / 4 = 0.5
+Cambia la velocidad de los ciclos por segundo. *Por ejemplo: 120 / 60 / 4 = 0.5*
 
 	!setcps 0.5
 
