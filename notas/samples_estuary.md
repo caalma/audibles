@@ -240,3 +240,8 @@ wobble | 1
 world | 3
 xmas | 1
 yeah | 31
+
+
+Se obtuvo mediante el comando:
+
+	!localview audiomap
