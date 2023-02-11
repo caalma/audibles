@@ -220,3 +220,20 @@
 	]
 	# bandf (100 + (sine * 2000)) # gain 1.7
 	-- # silence
+
+## int-erven-irirreg-u-lar
+
+	##minitidal
+
+	degradeBy 0.1
+	$ stack[
+	n "<0 3>(4,9)" # s "jvbass"
+	, n "<0 2 4>(5,9)" # s "bass3"
+	, swing (4/7) $ n "0(4,7)" # s "tok" # gain 1.4
+
+	, n "0([2 | 1],7)" # s "gtr" |+ note ((irand 3) + "<0 3 7 11>")
+    # begin "0.2" # end  "[0.4 | 0.5]"
+    # bandf "[20, 200, 500, 1000, 3000, 2000, 4000, 10000]"
+    # gain 1.7
+
+	]
