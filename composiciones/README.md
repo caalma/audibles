@@ -237,3 +237,22 @@
     # gain 1.7
 
 	]
+
+
+## in-terve-n-idoreg-ula-r
+
+	##minitidal
+
+	swing ("[6 | 3]" / 8) $
+	degradeBy 0.1 $
+	stack[
+	note "<e f>(4,8)" # s "jvbass"
+	, note "<c g a>(6,8)" # s "bass3"
+	, note "b(2,8)" # s "tok" # gain 1.4
+
+	, s "gtr" # note "c([0 | 1 | 2],8)" |+ note  "[12 | -12 | 6 | -6]"
+    # begin "0.4" # end  "[0.8 | 1.2]"
+    # bandf "[20, 200, 500, 1000, 3000, 2000, 4000, 10000]" # gain 1.7
+
+	]
+	-- # silence
