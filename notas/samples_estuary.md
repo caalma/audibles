@@ -1,242 +1,242 @@
-# Lista de samples en Estuary
+# Bancos de sonidos en Estuary
 
-La siguiente lista, actualizada a 2023-02-11, contiene los samples básicos disponibles.
+La siguiente lista, actualizada a 2023-02-11, contiene los bancos de sonidos básicos.
 
-nombre | cantidad de samples
-----|-----------
-808 | (6 samples)
-808bd | (25 samples)
-808cy | (25 samples)
-808hc | (5 samples)
-808ht | (5 samples)
-808lc | (5 samples)
-808lt | (5 samples)
-808mc | (5 samples)
-808mt | (5 samples)
-808oh | (5 samples)
-808sd | (25 samples)
-909 | (1 samples)
-ab | (12 samples)
-acordeon | (1 samples)
-ade | (10 samples)
-ades2 | (9 samples)
-ades3 | (7 samples)
-ades4 | (6 samples)
-alex | (2 samples)
-alphabet | (26 samples)
-altavoz | (2 samples)
-amencutup | (32 samples)
-armora | (7 samples)
-arp | (2 samples)
-arpy | (11 samples)
-auto | (11 samples)
-baa | (7 samples)
-baa2 | (7 samples)
-bajo | (2 samples)
-bass | (4 samples)
-bass0 | (3 samples)
-bass1 | (30 samples)
-bass2 | (5 samples)
-bass3 | (11 samples)
-bassdm | (24 samples)
-bassfoo | (3 samples)
-battles | (2 samples)
-bd | (24 samples)
-bend | (4 samples)
-bev | (2 samples)
-bin | (2 samples)
-birds | (10 samples)
-birds3 | (19 samples)
-bleep | (13 samples)
-blip | (2 samples)
-blue | (2 samples)
-bottle | (13 samples)
-breaks125 | (2 samples)
-breaks152 | (1 samples)
-breaks157 | (1 samples)
-breaks165 | (1 samples)
-breath | (1 samples)
-bubble | (8 samples)
-can | (14 samples)
-casio | (3 samples)
-cb | (1 samples)
-cbow | (18 samples)
-cc | (6 samples)
-chin | (4 samples)
-circus | (3 samples)
-clak | (2 samples)
-click | (4 samples)
-clubkick | (5 samples)
-co | (4 samples)
-coffee | (39 samples)
-coins | (1 samples)
-contratiempos | (3 samples)
-control | (2 samples)
-cosmicg | (15 samples)
-cp | (2 samples)
-cpluck | (15 samples)
-cr | (6 samples)
-crow | (4 samples)
-cuerdas | (2 samples)
-d | (4 samples)
-db | (13 samples)
-diphone | (38 samples)
-diphone2 | (12 samples)
-dist | (16 samples)
-dork2 | (4 samples)
-dorkbot | (2 samples)
-dr | (42 samples)
-dr2 | (6 samples)
-dr55 | (4 samples)
-dr |_few (8 samples)
-drum | (6 samples)
-drumtraks | (13 samples)
-e | (8 samples)
-east | (9 samples)
-efecto | (1 samples)
-electro1 | (13 samples)
-em2 | (6 samples)
-erk | (1 samples)
-f | (1 samples)
-feel | (7 samples)
-feelfx | (8 samples)
-fest | (1 samples)
-fire | (1 samples)
-flbass | (17 samples)
-flick | (17 samples)
-fm | (17 samples)
-foo | (27 samples)
-future | (17 samples)
-gab | (10 samples)
-gabba | (4 samples)
-gabbaloud | (4 samples)
-gabbalouder | (4 samples)
-glasstap | (3 samples)
-glitch | (8 samples)
-glitch2 | (8 samples)
-gretsch | (24 samples)
-gtr | (3 samples)
-guira | (3 samples)
-h | (7 samples)
-hand | (17 samples)
-hardcore | (12 samples)
-hardkick | (6 samples)
-haw | (6 samples)
-hc | (6 samples)
-hh | (13 samples)
-hh27 | (13 samples)
-hit | (6 samples)
-hmm | (1 samples)
-ho | (6 samples)
-hoover | (6 samples)
-house | (8 samples)
-ht | (16 samples)
-if | (5 samples)
-ifdrums | (3 samples)
-incoming | (8 samples)
-industrial | (32 samples)
-insect | (3 samples)
-invaders | (18 samples)
-jamblock | (1 samples)
-jazz | (8 samples)
-jungbass | (20 samples)
-jungle | (13 samples)
-juno | (12 samples)
-jvbass | (13 samples)
-kicklinn | (1 samples)
-koy | (2 samples)
-kurt | (7 samples)
-latibro | (8 samples)
-led | (1 samples)
-less | (4 samples)
-lighter | (33 samples)
-linnhats | (6 samples)
-lt | (16 samples)
-made | (7 samples)
-made2 | (1 samples)
-mash | (2 samples)
-mash2 | (4 samples)
-metal | (10 samples)
-miniyeah | (4 samples)
-monsterb | (6 samples)
-moog | (7 samples)
-mouth | (15 samples)
-mp3 | (4 samples)
-msg | (9 samples)
-mt | (16 samples)
-mute | (28 samples)
-newnotes | (15 samples)
-noise | (1 samples)
-noise2 | (8 samples)
-notes | (15 samples)
-numbers | (9 samples)
-oc | (4 samples)
-odx | (15 samples)
-off | (1 samples)
-outdoor | (6 samples)
-pad | (3 samples)
-padlong | (1 samples)
-pebbles | (1 samples)
-perc | (6 samples)
-peri | (15 samples)
-pluck | (17 samples)
-popkick | (10 samples)
-print | (11 samples)
-proc | (2 samples)
-procshort | (8 samples)
-psr | (30 samples)
-quinto | (3 samples)
-rave | (8 samples)
-rave2 | (4 samples)
-ravemono | (2 samples)
-realclaps | (4 samples)
-reverbkick | (1 samples)
-rm | (2 samples)
-rs | (1 samples)
-sax | (22 samples)
-sd | (2 samples)
-seawolf | (3 samples)
-sequential | (8 samples)
-sf | (18 samples)
-sheffield | (1 samples)
-short | (5 samples)
-sid | (12 samples)
-sine | (6 samples)
-sitar | (8 samples)
-sn | (52 samples)
-space | (18 samples)
-speakspell | (12 samples)
-speech | (7 samples)
-speechless | (10 samples)
-speedupdown | (9 samples)
-sprvibe | (85 samples)
-stab | (23 samples)
-stomp | (10 samples)
-subroc3d | (11 samples)
-sugar | (2 samples)
-sundance | (6 samples)
-tabla | (26 samples)
-tabla2 | (46 samples)
-tablex | (3 samples)
-tacscan | (22 samples)
-tarola | (1 samples)
-tech | (13 samples)
-techno | (7 samples)
-teclado | (6 samples)
-tink | (5 samples)
-tok | (4 samples)
-toys | (13 samples)
-trump | (11 samples)
-tumba | (2 samples)
-ukulele | (14 samples)
-ul | (10 samples)
-ulgab | (5 samples)
-uxay | (3 samples)
-v | (6 samples)
-vgut | (16 samples)
-voodoo | (5 samples)
-wind | (10 samples)
-wobble | (1 samples)
-world | (3 samples)
-xmas | (1 samples)
-yeah | (31 samples)
+Mombre | Cantidad de samples
+-|-
+808 | 6
+808bd | 25
+808cy | 25
+808hc | 5
+808ht | 5
+808lc | 5
+808lt | 5
+808mc | 5
+808mt | 5
+808oh | 5
+808sd | 25
+909 | 1
+ab | 12
+acordeon | 1
+ade | 10
+ades2 | 9
+ades3 | 7
+ades4 | 6
+alex | 2
+alphabet | 26
+altavoz | 2
+amencutup | 32
+armora | 7
+arp | 2
+arpy | 11
+auto | 11
+baa | 7
+baa2 | 7
+bajo | 2
+bass | 4
+bass0 | 3
+bass1 | 30
+bass2 | 5
+bass3 | 11
+bassdm | 24
+bassfoo | 3
+battles | 2
+bd | 24
+bend | 4
+bev | 2
+bin | 2
+birds | 10
+birds3 | 19
+bleep | 13
+blip | 2
+blue | 2
+bottle | 13
+breaks125 | 2
+breaks152 | 1
+breaks157 | 1
+breaks165 | 1
+breath | 1
+bubble | 8
+can | 14
+casio | 3
+cb | 1
+cbow | 18
+cc | 6
+chin | 4
+circus | 3
+clak | 2
+click | 4
+clubkick | 5
+co | 4
+coffee | 39
+coins | 1
+contratiempos | 3
+control | 2
+cosmicg | 15
+cp | 2
+cpluck | 15
+cr | 6
+crow | 4
+cuerdas | 2
+d | 4
+db | 13
+diphone | 38
+diphone2 | 12
+dist | 16
+dork2 | 4
+dorkbot | 2
+dr | 42
+dr2 | 6
+dr55 | 4
+dr |_few (8
+drum | 6
+drumtraks | 13
+e | 8
+east | 9
+efecto | 1
+electro1 | 13
+em2 | 6
+erk | 1
+f | 1
+feel | 7
+feelfx | 8
+fest | 1
+fire | 1
+flbass | 17
+flick | 17
+fm | 17
+foo | 27
+future | 17
+gab | 10
+gabba | 4
+gabbaloud | 4
+gabbalouder | 4
+glasstap | 3
+glitch | 8
+glitch2 | 8
+gretsch | 24
+gtr | 3
+guira | 3
+h | 7
+hand | 17
+hardcore | 12
+hardkick | 6
+haw | 6
+hc | 6
+hh | 13
+hh27 | 13
+hit | 6
+hmm | 1
+ho | 6
+hoover | 6
+house | 8
+ht | 16
+if | 5
+ifdrums | 3
+incoming | 8
+industrial | 32
+insect | 3
+invaders | 18
+jamblock | 1
+jazz | 8
+jungbass | 20
+jungle | 13
+juno | 12
+jvbass | 13
+kicklinn | 1
+koy | 2
+kurt | 7
+latibro | 8
+led | 1
+less | 4
+lighter | 33
+linnhats | 6
+lt | 16
+made | 7
+made2 | 1
+mash | 2
+mash2 | 4
+metal | 10
+miniyeah | 4
+monsterb | 6
+moog | 7
+mouth | 15
+mp3 | 4
+msg | 9
+mt | 16
+mute | 28
+newnotes | 15
+noise | 1
+noise2 | 8
+notes | 15
+numbers | 9
+oc | 4
+odx | 15
+off | 1
+outdoor | 6
+pad | 3
+padlong | 1
+pebbles | 1
+perc | 6
+peri | 15
+pluck | 17
+popkick | 10
+print | 11
+proc | 2
+procshort | 8
+psr | 30
+quinto | 3
+rave | 8
+rave2 | 4
+ravemono | 2
+realclaps | 4
+reverbkick | 1
+rm | 2
+rs | 1
+sax | 22
+sd | 2
+seawolf | 3
+sequential | 8
+sf | 18
+sheffield | 1
+short | 5
+sid | 12
+sine | 6
+sitar | 8
+sn | 52
+space | 18
+speakspell | 12
+speech | 7
+speechless | 10
+speedupdown | 9
+sprvibe | 85
+stab | 23
+stomp | 10
+subroc3d | 11
+sugar | 2
+sundance | 6
+tabla | 26
+tabla2 | 46
+tablex | 3
+tacscan | 22
+tarola | 1
+tech | 13
+techno | 7
+teclado | 6
+tink | 5
+tok | 4
+toys | 13
+trump | 11
+tumba | 2
+ukulele | 14
+ul | 10
+ulgab | 5
+uxay | 3
+v | 6
+vgut | 16
+voodoo | 5
+wind | 10
+wobble | 1
+world | 3
+xmas | 1
+yeah | 31
