@@ -2,7 +2,7 @@
 
 La siguiente lista, actualizada a 2023-02-11, contiene los bancos de sonidos básicos.
 
-Mombre | Cantidad de samples
+Nombre | Cantidad de samples
 -|-
 808 | 6
 808bd | 25
