@@ -256,3 +256,22 @@
 
 	]
 	-- # silence
+
+## lu-gubr-e
+
+	stack [
+	n "0 ~ ~ 0 1 ~ 1 2 1 0 ~ ~" # s "arp" # end 1
+	, slow 5 $ n "<0 3 5 6 3 5 6 0> <1 2 3> ~" # s "moog"
+	, n (irand 12) # s "newnotes(4,9)"
+	]
+	-- # silence
+
+## disco-r-dinan-te
+
+	stack [
+	n "<1 2 3 5 6>(3, 15)" # s "[909 | 808]"
+	, n "[1 | 2 | 3 | 5 | 6](2, 7)" # s "[909 | 808]"
+	, s "newnotes(11,17)"  #  n (irand 12)
+	, slow 3 $ s "gtr(3, 5)" # note "[c'maj | g'min | d'min'7 | a'min'7'o] <c'maj g'min>" |+ note (6 + (irand 5))
+	]
+	-- # silence
