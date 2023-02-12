@@ -259,6 +259,8 @@
 
 ## lu-gubr-e
 
+	##minitidal
+
 	stack [
 	n "0 ~ ~ 0 1 ~ 1 2 1 0 ~ ~" # s "arp" # end 1
 	, slow 5 $ n "<0 3 5 6 3 5 6 0> <1 2 3> ~" # s "moog"
@@ -267,6 +269,8 @@
 	-- # silence
 
 ## disco-r-dinan-te
+
+	##minitidal
 
 	stack [
 	n "<1 2 3 5 6>(3, 15)" # s "[909 | 808]"
