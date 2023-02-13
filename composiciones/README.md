@@ -284,12 +284,13 @@
 
 	##minitidal
 
-	swing (1/6) $ stack [
+	swing (2/6) $
+	stack [
 	n "[0 | 8 | 9](2,6)" # s "ht"
 	, n "~!2 [2 | 3]" # s "east"
 	, n "<11 12 13 15>(3,6)" # s "dr_few"
 	, n (irand 6) # s "[house | hit]"
-	, slow "[2 | 4 | 6]" $ n "[1 | 0]" # s "[ coins | em2]"
+	, slow "[2 | 4 | 6]" $ n "[1 | 0]" # s "[coins | em2]"
 	, slow 3 $ n "0 3 4 8 13 1 5 7 9 2" # s "flbass"
 	, slow "<2 3 1 4 1>" $ note "<c'maj g'min'o e'min bf'o>" |+ note "[-24 | -12 | 0 | 12 | 24]" # s "cpluck"
 	]
