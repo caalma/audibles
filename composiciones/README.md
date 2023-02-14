@@ -295,3 +295,14 @@
 	, slow "<2 3 1 4 1>" $ note "<c'maj g'min'o e'min bf'o>" |+ note "[-24 | -12 | 0 | 12 | 24]" # s "cpluck"
 	]
 	-- # silence
+
+## e-stirad-ocord-iformeap-a-jaread-o
+
+	##minitidal
+
+	stack[
+	slow "[3 | 5 | 7]" $ n "[0 ~? 1]*2 ~ [1? 0 2 1] ~ 0 _ [1 3]![3 | 2] ~!2" # s "[bass3?0.2, cpluck?.6, coins?]" # (slow "<2 1>" $ note "<1 4 8 7 5 3 2 0>")
+	, slow "[40 | 45]" $ n "0 1 0 2 1 3 1 4 2 5 2 6 4 3 5 3 6 4 2 1" # s "cbow"  # (slow 2 $ note "[-3 | 3 | 0]") # gain 0.8
+	, slow 4 $ n "[1 | 2 | 3 | ~](3, [7 | 11 | 13 | 17])" # s "ades4"
+	]
+	-- # silence
