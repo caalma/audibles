@@ -1,5 +1,17 @@
 # Composiciones
 
+## toc-argol-pearper-cuti-rya
+
+	##minitidal
+
+	stack [
+	n "<0 1 2>(4, 8)" # s "uxay"
+	, n "[0(5, 8) , 1(3, 8)]" # s "tumba"
+	, degradeBy 0.3 $ n "<0 2>(6, 8)" # s "quinto" # gain 0.7
+	, slow "[0 | 3 | 5]" $ n "0" # s "tink" # speed "[-0.1 | 0.1]" #  note "[a | g | d]" # gain 1.4
+	, slow "[0 | 1 | 2]" $ degradeBy 0.25 $ n "2 4 [8 | 10] 16 [13 | 15] 11 7 [1 | 3] " # s "sprvibe" # gain 0.8
+	]
+	-- # silence
 
 ## e-spacios-op-ormelod-i-co
 
