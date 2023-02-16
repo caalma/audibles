@@ -1,6 +1,7 @@
 # Bancos de sonidos en Estuary
 
-La siguiente lista, actualizada a 2023-02-11, contiene los bancos de sonidos básicos.
+Lista actualizada a 2023-02-11.
+Contiene los bancos de sonidos básicos.
 
 Nombre | Cantidad de samples
 -|-

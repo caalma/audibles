@@ -1,4 +1,4 @@
-# Bancos de sonido en Estuary.
+# Bancos de sonidos en Estuary
 
 Con descripción en español y código para probarlos.
 
