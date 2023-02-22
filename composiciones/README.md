@@ -1,5 +1,18 @@
 # Composiciones
 
+## tub-oslat-asbotel-lasfu-egoins-ectos
+
+    ##minitidal
+
+    stack [
+    n "[0(<1 5 7>, 8) , 1(3, 8)]" # s "[tumba , bottle?]"
+    , n "[0(4, 8) , 1(<2 6>, 8)]" # s "[bin | mt?]"
+    , slow 10 $ n "0" # s "sheffield" # gain 0.8
+    , slow 6 $ n "0 " # s "fire"
+    , slow "[0.25 | 0.5 | 1 | 2 | 4]" $ n "<2 1 0>" # s "sprvibe" # speed 0.3 # gain 1.2 # note "<a? b? c e g>"
+    ]
+    -- # silence
+
 ## toc-argol-pearper-cuti-rya
 
 	##minitidal
