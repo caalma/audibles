@@ -1,5 +1,23 @@
 # Composiciones
 
+
+## ci-closimp-u-ntuales
+
+    ##minitidal
+
+    slow 0.1 $ stack [
+    slow 3 $ n "0" # s "sid"
+    , slow 5 $ n "1" # s "sid"
+    , slow 7 $ n "2" # s "sid"
+    , slow 11 $ n "3" # s "sid"
+    , slow 13 $ n "4" # s "sid"
+    , slow 17 $ n "5" # s "sid"
+    , slow 19 $ n "7" # s "sid"
+    , slow 23 $ n "8" # s "sid"
+    , slow 29 $ n "9" # s "sid"
+    ]
+    -- # silence
+
 ## tub-oslat-asbotel-lasfu-egoins-ectos
 
     ##minitidal
