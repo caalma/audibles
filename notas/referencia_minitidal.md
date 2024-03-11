@@ -2,7 +2,7 @@
 
 Es un subconjunto de TidalCycles.
 
-*"Un lenguaje de codificación en vivo que permite crear patrones musicales con texto, describiendo secuencias y formas de transformarlas y combinarlas, explorando complejas interacciones entre partes sencillas." (Estuary)
+*"Un lenguaje de codificación en vivo que permite crear patrones musicales con texto, describiendo secuencias y formas de transformarlas y combinarlas, explorando complejas interacciones entre partes sencillas."* (Estuary)
 
 La documentación oficial de TidalCycles está disponible en https://tidalcycles.org/docs/ .
 
