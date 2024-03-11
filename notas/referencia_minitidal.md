@@ -53,7 +53,7 @@ Minitidal actualmente soporta las siguiente funciones:
 - `ghost`
 
 - `hcutoff`
-- `hresonance`
+- `hresonance` Convierte un patrón numérico en un patrón de control que ajusta la resonancia de un filtro de paso alto. Acepta decimales entre 0 a 1.
 
 - `id`
 - `inside`
@@ -94,12 +94,12 @@ Minitidal actualmente soporta las siguiente funciones:
 - `rangex`
 - `rarely`
 - `repeatCycles`
-- `resonance`
-- `rev`
-- `run`
+- `resonance` Convierte un patrón numérico en un patrón de control que ajusta la resonancia de un filtro de paso bajo. Acepta decimales entre 0 a 1.
+- `rev` Devuelve la versión invertida de un patrón.
+- `run` Patrón de valores enteros entre 0 y n-1. `(run 4)` a `"0..3"`.
 
 - `s` Versión breve de `sound`.
-- `saw`
+- `saw` Secuencia numérica con una onda lineal zigzag.
 - `scale`
 - `scan`
 - `scramble`
@@ -108,7 +108,7 @@ Minitidal actualmente soporta las siguiente funciones:
 - `shuffle`
 - `silence` Es el patrón vacio. Silencia (o se traga) todo lo que pase por él.
 - `silent` Es un patrón que silencia. Similar a utilizar `(mask "~")`.
-- `sine`
+- `sine` Secuencia numérica con una onda sinusoidal.
 - `slow`
 - `slowcat`
 - `sometimes`
@@ -138,7 +138,7 @@ Minitidal actualmente soporta las siguiente funciones:
 - `toScale`
 - `tri`
 - `trigger`
-- `trunc`
+- `trunc` Recorta un patrón según el porcentaje indicado.
 
 - `unfix`
 - `up`
@@ -166,3 +166,6 @@ Minitidal actualmente soporta las siguiente funciones:
 # Casos de usos
 
 - `n "5*2 ~ 5" # s "hh27"`
+- `n "10*8" # s "ab" # cutoff (sine * 20000)`
+- `every 3 rev $ n "0..8" # s "future"`
+- `every "3 2 5" rev $ n "0..8" # s "bass" # hresonance (perlin - 0.1) # resonance "0.8 0 <0.95 0.2>" `
