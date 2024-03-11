@@ -1,6 +1,4 @@
 # Composiciones
 
 
-## En MiniTidal
-
-[Aquí](./minitidal.md)
++ En [MiniTidal](./minitidal.md)
