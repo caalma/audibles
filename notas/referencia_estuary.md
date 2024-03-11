@@ -63,3 +63,16 @@ Lista de samples disponibles:
 Importar bancos de samples:
 
 	!reslist "http://page.xyz/samples.json"
+
+## Canales de salida de audio
+
+Máximo de canales disponibles en el navegador:
+    !maxAudioOutputs
+
+Cantidad de canales usados actualmente:
+
+    !audioOutputs
+
+Setear cantidad de canales:
+
+    !setAudioOutputs [someNumber]

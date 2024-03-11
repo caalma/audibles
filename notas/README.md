@@ -7,3 +7,6 @@ Referencias sobre:
 + Banco de sonido en Estuary:
   [listado simple](./samples_estuary.md),
   [listado comentado](./samples_estuary_comentados.md)
+
+
+Existe otras referencias disponibles en  https://github.com/caalma/curso_ptav_estuary/ .
