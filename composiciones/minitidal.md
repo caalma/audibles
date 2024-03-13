@@ -1,12 +1,29 @@
 # Composiciones
 
+## hi-pnotiz-a-ralc-i-clar
+
+    ##minitidal
+
+    stack [
+    n "0..5(<9 6 3>, <12 7>)" # s "bajo" # up (slow 9 perlin)
+    , n "0..5(<12 9>, <9 12 6>)" # s "tumba" # up (fast 9 perlin)
+    ]
+
+## sindes-canz-oho-y
+
+    ##minitidal
+
+    stack [
+    contrast (# speed "<2 -1>") (rev)  (n "<2? 3 5? 7>") $ n "0..8" # s "bass"
+    , slow "3 0.3" $ chunk' "2 3" (# speed "0.4 0.2") $ sound "gtr*<8 7 9>" # gain 0.7
+    ]
+    -- # silence
 
 ## lab-erint-oo-toñer-o
 
     ##minitidal
 
     stack [
-
     n "~ ~ 0(5,<8 9>)" # s "sprvibe" # note "c"
     , n "~ 0(6,<7 9>)" # s "sprvibe" # note "g"
     , n "0(7,<8 9>)" # s "sprvibe" # note "e"
