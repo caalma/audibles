@@ -33,6 +33,7 @@ Minitidal actualmente soporta las siguiente funciones:
 - `crush` Suministrado un patrón numérico, controla un efecto de aplastamiento de bit.
 - `cut` Trunca un sample cuando se cumple la fracción de ciclo máxima especificada. Se le puede suministrar un patrón de eneteros.
 - `cutoff` Según un patrón numérico suministrado, realiza un filtrado de paso bajo. En SuperDirt, esto es en Hz (prueba un rango entre 0 y 10000). En dirt clásico, es de 0 a 1.
+
 - `degrade `Elimina aleatoriamente eventos de un patrón, el 50% de las veces.
 - `degradeBy` Elimina aleatoriamente eventos de un patrón, según el valor suministrado (entre 0 y 1).
 - `delay` Acepta un patrón numérico, que utiliza para marcar la fuerza de los ecos.
@@ -40,6 +41,7 @@ Minitidal actualmente soporta las siguiente funciones:
 - `delaytime` Acepta un patrón numérico, que utiliza para cambiar la duración del efecto indicado.
 - `density` Acelera la velocidad de un patrón.
 
+- `echo` ???
 - `end` Suministraod un patrón numérico de valores entre 0 y 1, controla el punto de finalización de los samples.
 - `every` Permite aplicar una función segun una cantidad de ciclos suministrada.
 
@@ -75,64 +77,65 @@ Minitidal actualmente soporta las siguiente funciones:
 - `n` Dado un patrón numérico, lo convierte en un patrón de control para seleccionar un sonido del banco de sonidos utilizado.
 - `never` Aplica una función al patrón actual, en aproximadamente el 90% de las veces.
 
-- `often`
+- `often` Recibe una función y patrón, al cual le aplica dicha función el 75% de las veces de forma aleatoria.
 - `outside` Toma el exterior de un patrón y lo introduce en el interior.
-- `overlay`
+- `overlay` Encadena dos patrones, que preservan su duración original.
 
-- `palindrome`
-- `pan`
+- `palindrome` Aplica `rev` a un patrón cada dos ciclos, de modo que el patrón alterna entre avance y retroceso.
+- `pan` Convierte un patrón numérico (entre 0 a 1) en un patrón de control que especifíca el canal de audio. '0' corresponde al parlante izquierdo y '1' al derecho.
 - `perlin` Emite ruido 1D suavizado. En cada ciclo se genera un nuevo valor aleatorio.
 - `perlin2` Emite ruido 2D  permitiendo especificar un patrón personalizado como segunda dimensión. El número de ciclo permanece como primera dimensión.
 - `perlin2With` Similar a `perlinWith` pero con 2 dimensiones.
 - `perlinWith` Permite especificar un patrón como entrada para generar valores aleatorios en lugar de utilizar el recuento de ciclos predeterminado.
-- `ply`
+- `ply` Repíte cada evento una n cantidad de veces indicada.
 
-- `quantise`
+- `quantise` Útil para redondear una colección de números a una fracción de base determinada. =VERIFICAR SI FUNCIONA=
 
 - `rand` Emite un patrón continuo de valores pseudo-aleatorios comprendidos enter 0 y 1.
 - `randcat` Similar a `cat` pero eligiendo aleatoriamente los elementos de la lista suministrada.
-- `rangex`
-- `rarely`
-- `repeatCycles`
+- `range` Recibe un patrón (entre 0 a 1), y lo escalará a un rango diferente - entre el primer y el segundo argumento.
+- `rangex` versión exponencial de `range`
+- `rarely` Recibe una función y patrón, al cual le aplica dicha función el 25% de las veces de forma aleatoria.
+- `repeatCycles` Dada una lista de enteros y un patrón, repite este último según el entero actual.
+
 - `resonance` Convierte un patrón numérico en un patrón de control que ajusta la resonancia de un filtro de paso bajo. Acepta decimales entre 0 a 1.
 - `rev` Devuelve la versión invertida de un patrón.
 - `run` Patrón de valores enteros entre 0 y n-1. `(run 4)` a `"0..3"`.
 
 - `s` Versión breve de `sound`.
 - `saw` Secuencia numérica con una onda lineal zigzag.
-- `scale`
-- `scan`
-- `scramble`
-- `selectF`
-- `shape`
-- `shuffle`
+- `scale` Interpreta un patrón de números de notas en una escala con un nombre determinado. Las escalas disponibles son: `minPent majPent ritusen egyptian kumai hirajoshi iwato chinese indian pelog prometheus scriabin gong shang jiao zhi yu whole wholetone augmented augmented2 hexMajor7 hexDorian hexPhrygian hexSus hexMajor6 hexAeolian major ionian dorian phrygian lydian mixolydian aeolian minor locrian harmonicMinor harmonicMajor melodicMinor melodicMinorDesc melodicMajor bartok hindu todi purvi marva bhairav ahirbhairav superLocrian romanianMinor hungarianMinor neapolitanMinor enigmatic spanish leadingWhole lydianMinor neapolitanMajor locrianMajor diminished octatonic diminished2 octatonic2 messiaen1 messiaen2 messiaen3 messiaen4 messiaen5 messiaen6 messiaen7 chromatic bayati hijaz sikah rast saba iraq`.
+- `scan` Patrón de valores enteros entre 1 y n. `(scan 4)` a `"1..5"`.
+- `scramble` Recibe un número y un patrón. Divide el patrón en el número dado de partes y devuelve un nuevo patrón seleccionando aleatoriamente entre las partes.
+- `selectF` Elige entre una lista de funciones, utilizando un patrón de decimales entre 0 a 1.
+- `shape` Produce distorsión en forma de onda. Reciben un patrón de números desde 0 para ninguna distorsión hasta 1 para mucha distorsión. =VERIFICAR SI FUNCIONA=
+- `shuffle` Toma un número y un patrón como entrada, divide el patrón en el número dado de partes, y devuelve un nuevo patrón como una permutación aleatoria de las partes, escogiendo una de cada por ciclo.
 - `silence` Es el patrón vacio. Silencia (o se traga) todo lo que pase por él.
 - `silent` Es un patrón que silencia. Similar a utilizar `(mask "~")`.
 - `sine` Emine un patrón contínuo con valores de una función seno.
-- `slow`
+- `slow` Cambia la velocidad de un patrón.
 - `slowcat` Encadena una lista de patrones, que preservan su duración original.
-- `sometimes`
-- `sometimesBy`
+- `sometimes` Recibe una función y un patrón. Aplica la función al patrón el 50% de las veces.
+- `sometimesBy` Recibe un patron de decimal entre 0 y 1, una función y un patrón. Aplica la función al patrón según del decimal suministrado.
 - `sound` Selecciona el banco de sonido a utilizar.
-- `sparsity`
-- `speed`
-- `spreadChoose/spreadr`
-- `spreadf`
-- `square`
-- `stack`
-- `step`
-- `step'`
-- `steps`
-- `stitch`
-- `striate`
-- `striate'`
-- `striateBy`
-- `stripe`
-- `struct`
-- `stut`
-- `stutWith`
-- `stutter`
-- `swing`
+- `sparsity` Recibe un decimal y un patrón, luego ralentiza el patrón según el valor suministrado.
+- `speed` Dado un patrón numérico lo convierte a un patrón de control que establece la velocidad de reproducción de una muestra. 1 es velocidad normal, >1 más velocidad <1 menor velocidad, <0 invierte la muestra.
+- `spread` Permite tomar una transformación de patrón que toma un parámetro, como lento, y proporcionar varios parámetros que se alternan entre sí. En otras palabras, "reparte" una función entre varios valores.
+- `spreadr` o `spreadChoose` Similar a `spread` pero los valores se seleccionan al azar, un ciclo cada vez.
+- `spreadf` Abreviatura de `spread ($)`
+- `square` Una onda cuadrada que empieza en 0 y sube a 1 a mitad de ciclo.
+- `stack` Toma una lista de patrones y los combina en un nuevo patrón superponiéndolos, reproduciendo simultáneamente todos los patrones de la lista.
+- `step` Genera un patrón de cadenas con la sintaxis exacta que se desea para seleccionar muestras y que puede introducirse directamente en la función s.
+- `step'` Similar a `step` pero más general, utilizando los números de la cadena de secuenciación por pasos como índices en la lista de cadenas que le des.
+- `steps` Similar a `step` pero toma una lista de pares como haría `step` y los reproduce todos simultáneamente.
+- `stitch` Recibe 3 patrones. Utiliza el primer patrón (binario) para cambiar entre los dos patrones siguientes. La estructura resultante proviene del patrón binario, no de los patrones fuente.
+- `striate` Corta las muestras en trozos de forma similar a `chop`, pero los trozos resultantes se organizan de forma diferente.
+- `striate'` o `striateBy` Similar a `striate` pero con un parámetro extra para definir la longitud de los trozos.
+- `stripe` Repite un patrón a velocidades aleatorias. El primer parámetro indica el número de ciclos sobre los que se va a actuar. Cada ciclo se reproducirá a una velocidad aleatoria, pero de forma que la duración total sea la misma.
+- `struct` Coloca una estructura rítmica "booleana" sobre el patrón que le has dado.
+- `stut` Aplica un tipo de retardo a un patrón. Tiene tres parámetros, que podrían llamarse profundidad, realimentación y tiempo. Profundidad es un entero y los otros de coma flotante.
+- `stutter` ??? Es como `stut` que no reduce el volumen o `ply` si controlas el tiempo. `stutter n t` repite cada evento en el patrón n veces, separadas por t tiempo (en fracciones de un ciclo).
+- `swing` ??? Rompe cada ciclo en n trozos, y entonces retrasa los eventos en la segunda mitad de cada trozo por la cantidad x, que es relativa al tamaño del (medio) trozo. Así, si x es 0 no hace nada, 0.5 retrasa la mitad de la duración de la nota, y 1 volverá a no hacer nada.
 
 - `timeCat/timecat`
 - `toScale`
@@ -176,3 +179,6 @@ Minitidal actualmente soporta las siguiente funciones:
 - `s (density 6 "~ bajo gtr ~ bd") # cutoff 400`
 - `s "gtr*16" # end 0.2 # begin 0.7 # speed (saw - sine * perlin) # cut 2 # gain 1`
 - `degradeBy 0.2 $ juxBy 0.3 (# speed (2 * perlin)) $ sound "bass:1*9" # gain 0.8`
+- `palindrome $ n "[0..4]?" # s "cuerdas" # speed "0.22 0.1 0.4"`
+- `s (steps [("tok","x  xx  xxx"),("tink", " xx xx ")])`
+- `n (stitch "t*2 f  f ~ f ~" 1 2) # s "bd"`

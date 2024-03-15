@@ -1,5 +1,15 @@
 # Composiciones
 
+## son-aracay-a-lla
+
+    ##minitidal
+
+    slow 2 $ stack [
+    striate 10 $ n (stitch "t*2 f  f ~ f ~" 1 2) # s "bd" # resonance 2
+    , striate' 7 0.4 $ n "1 ~ ~ 2 ~" # s "bajo" # speed 0.6
+    ]
+    -- # silence
+
 ## hi-pnotiz-a-ralc-i-clar
 
     ##minitidal
