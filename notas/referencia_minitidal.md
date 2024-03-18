@@ -6,7 +6,49 @@ Es un subconjunto de TidalCycles.
 
 La documentación oficial de TidalCycles está disponible en https://tidalcycles.org/docs/ .
 
-Minitidal actualmente soporta las siguiente funciones:
+Minitidal está disponible actualmente en Estuary https://estuary.mcmaster.ca
+
+## Comentario sobre Comentarios
+
+En Haskell, lenguaje base de TidalCycles los comentarios dentro del código se producen al anteponer a cualquier texto dentro de la línea '-- ' (dos guiones medio y un espacio). Por ejemplo:
+
+- `-- Este texto no se ejecuta`
+- `s "drum" -- Sonará algo de percusión.`
+
+## Estructura y uso de patrones
+
+    ##minitidal
+
+    -- slow 4 $ s "bajo ~ bd tumba db ~ tink drum"
+    -- slow 2 $ s "bd dr sn ht"
+    -- slow 2 $ s "bd [dr cp] ht sn"
+    -- slow 2 $ s "[cp bd] [ht dr sn]"
+    -- slow 2 $ s "cp bd dr ht sn"
+    -- slow 2 $ s "[cp bd] dr ht sn"
+    -- slow 2 $ s "[cp bd] dr [ht sn]"
+    -- slow 2 $ s "cp [bd dr] [ht sn]"
+    -- slow 2 $ s "[cp [bd dr]] [ht sn]"
+    -- slow 3 $ s "cp [bd dr]*2 ~ [ht sn]*3" -- con * se añaden n apariciones manteniendo el compas
+    -- slow 0.4 $ s "cp [dr*2 ~]/2 bd/4" -- con / se distancias las apariciones cada n compases
+    -- stack [ slow 0.5 $ s "bd/2" , slow 1 $ s "bajo",  slow 2 $ s "[tink*2]! ~*3" ]
+    -- slow 3 $ s "bd!2 sn*2 dr" -- con ! se añaden n apariciones dividiendo el compas
+    -- slow 0.5 $ s "[bajo, <drum tink tumba>]"
+    -- slow 0.5 $ s "[bajo | <drum tink tumba>] dr?" -- con  | se elige aleatoriamente alguna de las opciones de la lista. con ? se condiciona la aparición aleatoriamente del evento
+    -- stack [ s "[bd|dr]" , s "[sn|cp]" ]
+
+## Efectos
+
+    ##minitidal
+
+    -- s "bajo!4 ~ bass*2" # vowel "<[a i]*2 [e i o]*2>"
+    -- s "gtr*4 ~ bajo*6" # vowel "[p o p a] ~ [p a p p o p]"
+    -- s "bajo!8 ~" # note "[0 4 7 2 <5 7> 9 4 [9 | 3] <11 1>] ~"
+    -- s "bajo!6" # note "<0 1 3> <2 3 4> <4 5 6> <6 7 8> <8 9 10> <10 11 12>"
+    -- s "bajo!6" # note "<0..11> <1..13> <2..14> <3..15> <4..16> <5..17>"
+    -- s "bajo!6" # note "<-11..11>/6"
+    -- stack [ fast 2 $ s "bajo"  # speed 2, hurry 2 $ s "gtr" ]
+
+## Funciones soportadas en MiniTidal:
 
 - `accelerate` Cambia la velocidad de los samples. Acepta un patrón numérico. ¿funciona?
 - `almostAlways` Aplica una función al patrón actual, en aproximadamente el 90% de las veces.
@@ -56,6 +98,7 @@ Minitidal actualmente soporta las siguiente funciones:
 
 - `hcutoff` Según un patrón numérico suministrado, realiza un filtrado de paso alto. En SuperDirt, esto es en Hz (prueba un rango entre 0 y 10000). En dirt clásico, es de 0 a 1.
 - `hresonance` Convierte un patrón numérico en un patrón de control que ajusta la resonancia de un filtro de paso alto. Acepta decimales entre 0 a 1.
+- `hurry` Dado un patrón numérico aplica en conjunto `fast` y `speed` con dicho valor.
 
 - `id` ???
 - `inside` Toma el interior de un patrón y lo expone al exterior.
@@ -137,34 +180,24 @@ Minitidal actualmente soporta las siguiente funciones:
 - `stutter` ??? Es como `stut` que no reduce el volumen o `ply` si controlas el tiempo. `stutter n t` repite cada evento en el patrón n veces, separadas por t tiempo (en fracciones de un ciclo).
 - `swing` ??? Rompe cada ciclo en n trozos, y entonces retrasa los eventos en la segunda mitad de cada trozo por la cantidad x, que es relativa al tamaño del (medio) trozo. Así, si x es 0 no hace nada, 0.5 retrasa la mitad de la duración de la nota, y 1 volverá a no hacer nada.
 
-- `timeCat/timecat`
-- `toScale`
-- `tri`
-- `trigger`
+- `timecat` o `timeCat`  Es como `fastcat` excepto en que se proporcionan tamaños proporcionales de los patrones entre sí para cuando se concatenan en un ciclo. Cuanto mayor sea el valor de la lista, mayor será el tamaño relativo del patrón en el bucle final.
+- `toScale` Permite aplicar rápidamente una escala sin nombrarla.
+- `tri` Una onda triangular, que empieza en 0, sube linealmente hasta 1 a mitad de ciclo y vuelve a bajar.
+- `trigger` Alinea el inicio de un patrón con el tiempo en que se evalúa un patrón, en lugar de con la tiempo de inicio global. Debido a esto, es probable que el patrón no esté alineado con la rejilla de patrones.
 - `trunc` Recorta un patrón según el porcentaje indicado.
 
-- `unfix`
-- `up`
-- `ur`
+- `unfix` Similar a `fix` pero sólo se aplica cuando el patrón de comprobación no coincide.
 
-- `vowel`
+- `up` Dado un patrón numérico flotante y/o entero controla la densidad del sample hacia más agudo "n>0" o más grave "n<0".
 
-- `wchoose`
-- `wchooseBy`
-- `weave`
-- `weaveWith`
-- `wedge`
-- `whenmod`
+- `vowel` Dado un patrón de texto, lo convierte a un patrón de control que crea un filtro de formantes para producir sonidos vocálicos en las muestras. Utilice los valores a, e, i, o y u para añadir el efecto.
 
-
-- `<>`
-- `.`
-- `#`
-- `$`
-- `|`
-- `+|`
-
-
+- `wchoose` Similar a `choose`, pero le permite "ponderar" las opciones, de modo que algunas tengan más probabilidades de ser elegidas que otras.
+- `wchooseBy` Como `wchoose` pero en lugar de seleccionar elementos de la lista aleatoriamente, utiliza el patrón dado para seleccionar elementos.
+- `weave` Aplica un patrón de control a una lista de otros patrones de control, con un desfase temporal sucesivo.
+- `weaveWith` Similar a `weave`, pero teje con una lista de funciones, en lugar de una lista de controles.
+- `wedge` Combina dos patrones aplastándolos en un único ciclo. Toma un ratio como primer argumento. El ratio determina qué porcentaje del ciclo del patrón ocupa el primer patrón. El segundo patrón rellena el resto del ciclo del patrón.
+- `whenmod` Similar a `every`, pero requiere un número adicional. Aplica la función al patrón, cuando el resto del número del bucle actual dividido por el primer parámetro, es mayor o igual que el número indicado.
 
 # Casos de usos
 
@@ -182,3 +215,5 @@ Minitidal actualmente soporta las siguiente funciones:
 - `palindrome $ n "[0..4]?" # s "cuerdas" # speed "0.22 0.1 0.4"`
 - `s (steps [("tok","x  xx  xxx"),("tink", " xx xx ")])`
 - `n (stitch "t*2 f  f ~ f ~" 1 2) # s "bd"`
+- `n (toScale [0,2,4,5,7] "0 1 2 3 4 5 6 7") # s "notes"`
+- `s "arpy*8" # up "-0.3 7 -4 2 -4*4 6"`
